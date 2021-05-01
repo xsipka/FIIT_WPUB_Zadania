@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE movie_database SYSTEM "zadanie_1_model.dtd">
+
+
+
+<movie_database>
+
+  <!-- List of movies-->
+  <movies>
+    
+    <!-- Movie 1 -->
+    <movie movie_id = "m_1" director_id = "dir_1 dir_2">
+      <title>No Country for Old Men</title>
+      <description>Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.</description>
+      <release_date>
+        <day>9</day>
+        <month>11</month>
+        <year>2007</year>
+      </release_date>
+      <genres>
+        <genre>Crime</genre>
+        <genre>Drama</genre>
+        <genre>Thriller</genre>
+      </genres>
+      <reviews>
+        <review user_id = "u_2" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_3" rating = "7/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+      </reviews>
+      <finance_records>
+        <budget>25000000</budget>
+        <gross>171600000</gross>
+      </finance_records>
+      
+      <!-- List of characters in movie 1 -->
+      <cast>
+        <character actor_id = "a_1">
+          <character_name>Ed Tom Bell</character_name>
+        </character>
+        <character actor_id = "a_2">
+          <character_name>Llewelyn Moss</character_name>
+        </character>
+        <character actor_id = "a_3">
+          <character_name>Anton Chigurh</character_name>
+        </character>
+      </cast>
+      
+      <trivia>According to a January 2018 article in Business Insider, a group of psychiatrists studied 400 movies and identified 126 psychopathic characters. They chose Javier Bardem's portrayal of Anton Chigurh as the most clinically accurate portrayal of a psychopath.</trivia>
+      <trivia>Composer Carter Burwell's score consists of only sixteen minutes of music.</trivia>
+    </movie>
+
+    <!-- Movie 2 -->
+    <movie movie_id = "m_2" director_id = "dir_3">
+      <title>One Flew Over the Cuckoo's Nest</title>
+      <description>A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients.</description>
+      <release_date>
+        <day>19</day>
+        <month>11</month>
+        <year>1975</year>
+      </release_date>
+      <genres>
+        <genre>Drama</genre>
+      </genres>
+      <reviews>
+        <review user_id = "u_1" rating = "9/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_3" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+      </reviews>
+      <finance_records>
+        <budget>4400000</budget>
+        <gross>163300000</gross>
+      </finance_records>
+
+      <!-- List of characters in movie 2 -->
+      <cast>
+        <character actor_id = "a_4">
+          <character_name>R. P. McMurphy</character_name>
+        </character>
+        <character actor_id = "a_5">
+          <character_name>Nurse Ratched</character_name>
+        </character>
+      </cast>
+      
+      <trivia>Louise Fletcher was so disturbed by her own performance that she couldn't watch the film for years.</trivia>
+      <trivia>At the time, it was the seventh biggest grossing film of all time.</trivia>
+    </movie>
+    
+    <!-- Movie 3 -->
+    <movie movie_id="m_3" director_id="dir_1 dir_2">
+      <title>Inside Llewyn Davis</title>
+      <description>A week in the life of a young singer as he navigates the Greenwich Village folk scene of 1961.</description>
+      <release_date>
+        <day>19</day>
+        <month>5</month>
+        <year>2013</year>
+      </release_date>
+      <genres>
+        <genre>Comedy</genre>
+        <genre>Drama</genre>
+        <genre>Music</genre>
+      </genres>
+      <reviews>
+        <review user_id = "u_2" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_3" rating = "7/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+      </reviews>
+      <finance_records>
+        <budget>11000000</budget>
+        <gross>33000000</gross>
+      </finance_records>
+      
+      <!-- List of characters in movie 3 -->
+      <cast>
+        <character actor_id = "a_6">
+          <character_name>Llewyn Davis</character_name>
+        </character>
+      </cast>
+    </movie>
+  
+    <!-- Movie 4 -->
+    <movie movie_id="m_4" director_id="dir_4">
+      <title>Apocalypse Now</title>
+      <description>A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.</description>
+      <release_date>
+        <day>19</day>
+        <month>5</month>
+        <year>1979</year>
+      </release_date>
+      <genres>
+        <genre>Drama</genre>
+        <genre>Mystery</genre>
+        <genre>War</genre>
+      </genres>
+      <reviews>
+        <review user_id = "u_2" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_3" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+      </reviews>
+      <finance_records>
+        <budget>31000000</budget>
+        <gross>150000000</gross>
+      </finance_records>
+    
+      <!-- List of characters in movie 4 -->
+      <cast>
+        <character actor_id = "a_7">
+          <character_name>Colonel Walter E. Kurtz</character_name>
+        </character>
+        <character actor_id = "a_8">
+          <character_name>Captain Benjamin L. Willard</character_name>
+        </character>
+      </cast>
+    </movie>
+  
+    <!-- Movie 5 -->
+    <movie movie_id="m_5" director_id="dir_4">
+      <title>The Godfather: Part II</title>
+      <description>The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.</description>
+      <release_date>
+        <day>12</day>
+        <month>12</month>
+        <year>1974</year>
+      </release_date>
+      <genres>
+        <genre>Drama</genre>
+        <genre>Crime</genre>
+      </genres>
+      <reviews>
+        <review user_id = "u_2" rating = "10/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+        <review user_id = "u_3" rating = "8/10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</review>
+      </reviews>
+      <finance_records>
+        <budget>13000000</budget>
+        <gross>88000000</gross>
+      </finance_records>
+    
+      <!-- List of characters in movie 4 -->
+      <cast>
+        <character actor_id = "a_9">
+          <character_name>Michael</character_name>
+        </character>
+      </cast>
+    </movie>
+  </movies>
+
+  
+  <!-- List of actors -->
+  <actors>
+    <actor actor_id = "a_1">
+      <name>Tommy Lee Jones</name>
+      <date_of_birth>
+        <day>15</day>
+        <month>9</month>
+        <year>1946</year>
+      </date_of_birth>
+    </actor>
+
+    <actor actor_id = "a_2" gender = "M">
+      <name>Josh Brolin</name>
+      <date_of_birth>
+        <day>15</day>
+        <month>2</month>
+        <year>1968</year>
+      </date_of_birth>
+    </actor>
+
+    <actor actor_id = "a_3" gender = "M">
+      <name>Javier Bardem</name>
+      <date_of_birth>
+        <day>1</day>
+        <month>3</month>
+        <year>1969</year>
+      </date_of_birth>
+    </actor>
+  
+    <actor actor_id = "a_4">
+      <name>Jack Nicholson</name>
+      <date_of_birth>
+        <day>22</day>
+        <month>4</month>
+        <year>1937</year>
+      </date_of_birth>
+    </actor>
+
+    <actor actor_id = "a_5" gender = "F">
+      <name>Louise Fletcher</name>
+      <date_of_birth>
+        <day>22</day>
+        <month>7</month>
+        <year>1934</year>
+      </date_of_birth>
+    </actor>
+
+    <actor actor_id = "a_6">
+      <name>Oscar Isaac</name>
+      <date_of_birth>
+        <day>9</day>
+        <month>3</month>
+        <year>1979</year>
+      </date_of_birth>
+    </actor>
+  
+    <actor actor_id = "a_7">
+      <name>Marlon Brando</name>
+      <date_of_birth>
+        <day>3</day>
+        <month>4</month>
+        <year>1924</year>
+      </date_of_birth>
+    </actor>
+  
+    <actor actor_id = "a_8">
+      <name>Martin Sheen</name>
+      <date_of_birth>
+        <day>3</day>
+        <month>8</month>
+        <year>1940</year>
+      </date_of_birth>
+    </actor>
+
+    <actor actor_id = "a_9">
+      <name>Al Pacino</name>
+      <date_of_birth>
+        <day>25</day>
+        <month>4</month>
+        <year>1940</year>
+      </date_of_birth>
+    </actor>
+  </actors>
+  
+  
+  <!-- List of directors -->
+  <directors>
+    <director director_id = "dir_1">
+      <name>Ethan Coen</name>
+      <date_of_birth>
+        <day>21</day>
+        <month>9</month>
+        <year>1957</year>
+      </date_of_birth>
+    </director>
+  
+    <director director_id = "dir_2">
+      <name>Joel Coen</name>
+      <date_of_birth>
+        <day>29</day>
+        <month>11</month>
+        <year>1954</year>
+      </date_of_birth>
+    </director>
+  
+    <director director_id = "dir_3" gender = "M">
+      <name>Miloš Forman</name>
+      <date_of_birth>
+        <day>18</day>
+        <month>2</month>
+        <year>1932</year>
+      </date_of_birth>
+    </director>
+  
+    <director director_id = "dir_4" gender = "M">
+      <name>Francis Ford Coppola</name>
+      <date_of_birth>
+        <day>7</day>
+        <month>2</month>
+        <year>1939</year>
+      </date_of_birth>
+    </director>
+  </directors>
+  
+  
+  <!-- List of users-->
+  <users>
+    <user user_id = "u_1">
+      <username>movie_enthusiast</username>
+      <email>j.johnson@yahoo.com</email>
+      <info>
+        I'm a fan of good movies.
+        <favourite_actor actor_id = "a_4"/>
+        <favourite_movie movie_id = "m_2"/>
+      </info>
+    </user>
+
+    <user user_id = "u_2">
+      <username>BigChungus</username>
+      <email>alfonz@gmail.com</email>
+      <info>I just watch movies :)</info>
+    </user>
+    
+    <user user_id = "u_3">
+      <username>kriticky_karol</username>
+      <email>karlovic@gmail.com</email>
+      <info>
+        <favourite_actor actor_id = "a_2"/>
+        <favourite_director director_id = "dir_2"/>
+      </info>
+    </user>
+  </users>
+</movie_database>

@@ -1,0 +1,72 @@
+﻿
+@media print {
+    /* Nezobrazuje header */
+    .header {
+        display: none;
+    }
+    /* Nastavenie tabulky */
+    .cast_table {
+        margin-top: -10px;
+        margin-left: 10px;
+        border-collapse: collapse;
+        width: 75%;
+    }
+    /* Ohranicenie tabulky a padding */
+    .cast_table td, .cast_table th {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    /* Table header setup */
+    .cast_table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+    }
+
+
+    /* Font setup, typy pisma, riadkovanie ... */
+    body {
+        font-family: 'Georgia Pro', Times, serif;
+        line-height: 1.5;
+        margin-left: 25px;
+    }
+    h2, h3, h4 {
+        font-family: Helvetica, sans-serif;
+    }
+
+
+    /* margins roznych prvkov */
+    @page {
+        margin: 15mm 5mm 20mm 10mm;
+    } 
+    .movie {
+        margin-bottom: 25px;
+    }
+    .directors {
+        margin-top: -10px;
+    }
+    .description {
+        margin-top: -10px;
+    }
+    .reviews > h3 {
+        margin-top: 20px;
+        margin-bottom: 1px;
+    }
+    .trivia_list {
+        margin-top: -10px;
+    }
+
+
+    /* Formatovanie recenzii */
+    .review {
+        width: 95%;
+        padding: 5px 5px 1px 5px;
+    }
+    /* Upravi meno autora recenzie a rating */
+    review_head {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.02em;
+    }
+}

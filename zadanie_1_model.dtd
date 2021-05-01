@@ -1,0 +1,59 @@
+﻿<!ELEMENT movie_database (movies, actors, directors, users)>
+
+<!ELEMENT movies (movie*)>
+<!ELEMENT movie (title, description, release_date, genres, reviews?, finance_records, cast, trivia*)>
+    <!ATTLIST movie movie_id ID #REQUIRED>
+    <!ATTLIST movie director_id IDREFS #REQUIRED>  
+<!ELEMENT title (#PCDATA)>      
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT trivia (#PCDATA)>
+<!ELEMENT release_date (day, month, year)>
+<!ELEMENT genres (genre+)>      
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT reviews (review*)>
+<!ELEMENT review (#PCDATA)>
+  <!ATTLIST review user_id IDREF #REQUIRED>
+  <!ATTLIST review rating CDATA #IMPLIED>
+<!ELEMENT finance_records (budget, gross?)>
+<!ELEMENT budget (#PCDATA)>
+<!ELEMENT gross (#PCDATA)>
+
+
+<!ELEMENT cast (character+)>
+<!ELEMENT character (character_name)>
+  <!ATTLIST character actor_id IDREF #REQUIRED>
+<!ELEMENT character_name (#PCDATA)>
+
+  
+<!ELEMENT actors (actor*)>
+<!ELEMENT actor (name, date_of_birth)>
+  <!ATTLIST actor actor_id ID #REQUIRED>
+  <!ATTLIST actor gender (M|F) #IMPLIED>
+
+
+<!ELEMENT directors (director*)>
+<!ELEMENT director (name, date_of_birth)>
+  <!ATTLIST director director_id ID #REQUIRED>
+  <!ATTLIST director gender (M|F) #IMPLIED>
+
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT date_of_birth (day, month, year)>
+<!ELEMENT day (#PCDATA)>      
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+
+<!ELEMENT users (user*)>
+<!ELEMENT user (username, email, info?)>
+  <!ATTLIST user user_id ID #REQUIRED>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT info (#PCDATA | favourite_movie | favourite_actor | favourite_director)*>
+<!ELEMENT favourite_movie EMPTY>
+  <!ATTLIST favourite_movie movie_id IDREF #REQUIRED>
+<!ELEMENT favourite_actor EMPTY>
+  <!ATTLIST favourite_actor actor_id IDREF #REQUIRED>
+<!ELEMENT favourite_director EMPTY>
+  <!ATTLIST favourite_director director_id IDREF #REQUIRED>
+

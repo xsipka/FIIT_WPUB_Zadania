@@ -1,0 +1,135 @@
+﻿
+@media screen {
+    /* Nastavenie tabulky */
+    .cast_table {
+        margin-top: -10px;
+        margin-left: 10px;
+        border-collapse: collapse;
+        width: 50%;
+    }
+    /* Ohranicenie tabulky a padding */
+    .cast_table td, .cast_table th {
+        border: 1px solid rgb(95, 95, 95);
+        padding: 8px;
+    }
+    /* Table header setup */
+    .cast_table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        background-color: rgba(181, 181, 181, 0.25);
+    }
+    .cast_table td {
+        background-color: rgb(75, 75, 75);
+    }
+
+
+    /* Font setup, typy pisma, farba, riadkovanie ... */
+    body {
+        font-family: 'Georgia Pro', Times, serif;
+        line-height: 1.5;
+        color: rgb(227, 227, 220);
+        background-color: rgb(55, 55, 55);
+        margin-left: 25px;
+    }
+    h2, h3, h4 {
+        font-family: Helvetica, sans-serif;
+    }
+    h2 {
+        text-shadow: 1px 1px 2px grey;
+    }
+
+
+    /* margins roznych prvkov */
+    .movie {
+        margin-bottom: 50px;
+    }
+    .directors {
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    .description {
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    .reviews > h3 {
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+    .trivia_list {
+        margin-top: -10px;
+    }
+
+
+    /* Zobrazi recenzie vedla seba */
+    .review {
+        float: left;
+        width: 25%;
+        padding: 15px;
+        margin: 2px 5px 5px 5px;
+        border-radius: 5px;
+        background-color: rgba(115, 239, 142, 0.85);
+        color: rgb(35, 35, 35);
+    }
+    /* Upravi meno autora recenzie a rating */
+    review_head {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.02em;
+        color: rgb(45, 45, 45);
+    }
+    /* Resetuje float left */
+    .reviews:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    /* Header setup */
+    .header {
+        background-color: rgba(74, 190, 100, 0.85);
+        text-align: center;
+        line-height: 0.75;
+        font-family: Helvetica, sans-serif;
+        color: rgb(227, 227, 220);
+        text-shadow: 2px 2px 5px grey;
+        padding: 20px;
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        margin-top: -1vw;
+        left: 50%;
+    }
+}
+
+
+/* Responzivna obrazovka, zobrazenie zoznamov, recenzii a velkost tabuliek */
+/* Pre mobilne telefony */
+@media screen and (max-width:600px) {
+    .review { width: 90%; }
+    .cast_table { width: 95%; }
+    ul { width: 90%; }
+}
+
+/* Pre vacsie telefony a male tablety*/
+@media only screen and (min-width: 600px) {
+    .review { width: 90%; }
+    .cast_table { width: 80%; }
+    ul { width: 85%; }
+}
+
+/* Pre stredne zariadenia (tablety, male monitory) */
+@media only screen and (min-width: 768px) {
+    .review { width: 45%; }
+    .cast_table { width: 75%; }
+    ul { width: 85%; }
+}
+
+/* Pre velke zariadenia */
+@media only screen and (min-width: 992px) {
+    .review { width: 25%; }
+    .cast_table { width: 50%; }
+    ul { width: 75%; }
+}
